@@ -1,0 +1,25 @@
+@Echo *********************************************
+@Echo *            Proxy Test with Curl           *
+@Echo * Visit https://github.com/sanjib-chowdhury *
+@Echo *********************************************
+
+@echo off
+setlocal
+
+@rem ##### Get inputs from user #####
+SET /P user=Input User:
+SET /P Password=Input Password:
+SET /P Proxy=Input Proxy:
+SET /P URL=Input URL:
+
+@rem ##### Please do not edit/ modify/ remove the below lines #####
+@Echo ************************************************************** > out.txt
+@Echo *                       Proxy Test with Curl                 * >> out.txt
+@Echo *  Visit https://github.com/sanjib-chowdhury for more tools  * >> out.txt
+@Echo ************************************************************** >> out.txt
+@Echo
+@echo curl -v -i -U %User%:%Password% --proxy %Proxy% %URL% >> out.txt
+curl -v -i -U %User%:%Password% --proxy %Proxy% %URL% >> out.txt
+@Echo
+@Echo ************************************************************** >> out.txt
+notepad out.txt
