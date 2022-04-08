@@ -1,0 +1,3 @@
+Downlaod the file "Proxy Test with Curl.txt". Rename "Proxy Test with Curl.txt" to "Proxy Test with Curl.bat". Double-click "Proxy Test with Curl.bat". Accept & continue when prompted.
+or
+Copy the content of "Proxy Test with Curl.txt" & create a file "Proxy Test with Curl.bat" and paste the copied content. Save the file & double-click "Proxy Test with Curl.bat" to run it. Accept & continue when prompted.
